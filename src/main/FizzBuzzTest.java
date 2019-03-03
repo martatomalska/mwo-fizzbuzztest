@@ -5,31 +5,31 @@ import org.junit.Assert;
 
 public class FizzBuzzTest {
 	
-	FizzBuzz fizz = new FizzBuzz();
+//	FizzBuzz fizz = new FizzBuzz();
 	
 	
 	@Test
 	public void testIfFizzBuzzPrintsNumbers() {
-		Assert.assertEquals("1", fizz.fizzBuzzOrNumber(1));
-		Assert.assertEquals("23", fizz.fizzBuzzOrNumber(23));		
+		Assert.assertEquals("1", FizzBuzz.fizzBuzzOrNumber(1));
+		Assert.assertEquals("23", FizzBuzz.fizzBuzzOrNumber(23));		
 	}
 	
 	@Test
 	public void testIfFizzBuzzPrintsFizz() {
-		Assert.assertEquals("Fizz", fizz.fizzBuzzOrNumber(3));
-		Assert.assertEquals("Fizz", fizz.fizzBuzzOrNumber(27));
+		Assert.assertEquals("Fizz", FizzBuzz.fizzBuzzOrNumber(3));
+		Assert.assertEquals("Fizz", FizzBuzz.fizzBuzzOrNumber(27));
 	}
 	
 	@Test
 	public void testIfFizzBuzzPrintsBuzz() {
-		Assert.assertEquals("Buzz", fizz.fizzBuzzOrNumber(5));
-		Assert.assertEquals("Buzz", fizz.fizzBuzzOrNumber(125));		
+		Assert.assertEquals("Buzz", FizzBuzz.fizzBuzzOrNumber(5));
+		Assert.assertEquals("Buzz", FizzBuzz.fizzBuzzOrNumber(125));		
 	}
 	
 	@Test
 	public void testIfFizzBuzzPrintsFizzBuzz() {
-		Assert.assertEquals("FizzBuzz", fizz.fizzBuzzOrNumber(15));				
-		Assert.assertEquals("FizzBuzz", fizz.fizzBuzzOrNumber(45));				
+		Assert.assertEquals("FizzBuzz", FizzBuzz.fizzBuzzOrNumber(15));				
+		Assert.assertEquals("FizzBuzz", FizzBuzz.fizzBuzzOrNumber(45));				
 	}
 	
 
