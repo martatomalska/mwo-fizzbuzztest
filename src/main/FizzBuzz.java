@@ -15,7 +15,9 @@ public class FizzBuzz {
 		
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append(number);
+		if (sb.length() == 0) {
+			sb.append(number);
+		}
 		
 		return sb.toString();
 	}
